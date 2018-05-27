@@ -24,4 +24,4 @@ while(read_buffer(&cb, &out) == OK_SIGNAL)
   printf("%c", out);
 ```
 
-See example using threads in test.c(test.c)
+See example using threads in [test.c](test.c)
