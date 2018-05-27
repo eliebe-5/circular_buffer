@@ -2,7 +2,7 @@
 
 Simple to use circular buffer to be used in multithread or network applications.
 
-#How To
+# How To
 
 Create and init buffer.
 ```
