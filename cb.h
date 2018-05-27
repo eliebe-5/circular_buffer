@@ -20,6 +20,8 @@ int init_circular_buffer(size_t size, circular_buffer* cb)
 	cb->write = 0;
 	cb->buffer = (byte*) malloc(size);
 	cb->size = size;
+	if(cb->buffer == NULL)
+		return ERROR_SIGNAL;
 	return OK_SIGNAL;
 }
 
