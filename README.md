@@ -24,4 +24,9 @@ while(read_buffer(&cb, &out) == OK_SIGNAL)
   printf("%c", out);
 ```
 
+And remember to destroy the object to prevent memory leaks.
+```
+destroy_circular_buffer(&cb);
+```
+
 See example using threads in [test.c](test.c)

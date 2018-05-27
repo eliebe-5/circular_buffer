@@ -46,5 +46,7 @@ int main(int argc, char** argv)
 
 	pthread_join(thread_id_read, NULL);
 
+	destroy_circular_buffer(&cb);
+
 	return OK_SIGNAL;
 }

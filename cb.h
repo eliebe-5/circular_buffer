@@ -25,6 +25,12 @@ int init_circular_buffer(size_t size, circular_buffer* cb)
 	return OK_SIGNAL;
 }
 
+int destroy_circular_buffer(circular_buffer* cb)
+{
+	free(cb->buffer);
+	return 0;
+}
+
 int read_buffer(circular_buffer* cb, byte* out)
 {
 	if(cb->read == cb->write) 
